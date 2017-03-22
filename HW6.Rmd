@@ -1,11 +1,11 @@
 ---
-title: "Homework 6: Installations"
+title: 'Homework 6: Installations'
 author: "Gaea Daniel"
 date: "3/22/2017"
 output:
-  html_document: default
-  pdf_document: default
   word_document: default
+  pdf_document: default
+  html_document: default
 always_allow_html: yes
 ---
 
@@ -57,8 +57,14 @@ fns <- list.files(path)
 fns
 
 ```{r}
-path <- "~/MiSeq_SOP" # CHANGE THIS to the directory containing the fastq files after unzipping
+path <- "/Users/gdaniel99/RStudio Stuff/Lesson-9/MiSeq_SOP/" # CHANGE THIS to the directory containing the fastq files after unzipping
 fns <- list.files(path)
+fns
+```
+
+```{r}
+path2 <- "/Users/gdaniel99/RStudio Stuff/Lesson-9/" # CHANGE THIS to the directory containing the fastq files after unzipping
+fns <- list.files(path2)
 fns
 ```
 
