@@ -1,8 +1,12 @@
 ---
-title: "HW6"
-author: "Vicki Hertzberg"
-date: "3/15/2017"
-output: html_document
+title: "Homework 6: Installations"
+author: "Gaea Daniel"
+date: "3/22/2017"
+output:
+  html_document: default
+  pdf_document: default
+  word_document: default
+always_allow_html: yes
 ---
 
 ```{r setup, include=FALSE}
@@ -21,7 +25,24 @@ Please document that you have installed the necessary packages and downloaded th
 
 library(*package_name*); packageVersion("*package_name*");
 
+```{r}
+source("https://bioconductor.org/biocLite.R")
+biocLite("dada2")
+source("https://bioconductor.org/biocLite.R")
+biocLite("phyloseq")
+source("https://bioconductor.org/biocLite.R")
+biocLite("ShortRead")
+```
+
 - Except for `ggplot2`, these packages are not available through CRAN; rather you will have to go through bioconductor. See the `dada2` installation instructions for guidance. Note: you should already have `ggplot2`, but please document it as well.
+
+```{r}
+library(dada2); packageVersion("dada2")
+library(phyloseq); packageVersion("phyloseq")
+library(ShortRead); packageVersion("ShortRead")
+library(ggplot2); packageVersion("ggplot2")
+```
+
 
 2. Please document that you have downloaded  THREE additional files as follows:
 
@@ -34,6 +55,12 @@ library(*package_name*); packageVersion("*package_name*");
 path <- "~/MiSeq_SOP" # CHANGE THIS to the directory containing the fastq files after unzipping
 fns <- list.files(path)
 fns
+
+```{r}
+path <- "~/MiSeq_SOP" # CHANGE THIS to the directory containing the fastq files after unzipping
+fns <- list.files(path)
+fns
+```
 
 Due on 3/22 at 5 pm.
 

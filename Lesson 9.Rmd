@@ -117,7 +117,7 @@ To grow the tree we will use the command
 _rpart_(*formula*, _data =_, _method =_, _control =_) where 
 
 * *formula* is in the format Y ~ X1 + X2 + ... + Xp
-
+Note: This is NOT a linear model. "+" only means to include variable for consideration.
 * _data =_ specifies the data frame
 
 * _method = "anova"_ for a regression tree
